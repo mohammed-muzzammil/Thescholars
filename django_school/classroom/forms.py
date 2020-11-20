@@ -51,7 +51,7 @@ class StudentInterestsForm(forms.ModelForm):
 class QuestionForm(forms.ModelForm):
     class Meta:
         model = Question
-        fields = ('text', )
+        fields = ('text', 'header_image')
 
 
 class BaseAnswerInlineFormSet(forms.BaseInlineFormSet):
@@ -83,3 +83,7 @@ class TakeQuizForm(forms.ModelForm):
         question = kwargs.pop('question')
         super().__init__(*args, **kwargs)
         self.fields['answer'].queryset = question.answers.order_by('text')
+        
+        
+        
+        

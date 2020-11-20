@@ -34,6 +34,8 @@ class Quiz(models.Model):
 class Question(models.Model):
     quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE, related_name='questions')
     text = models.TextField('Question')
+    header_image=models.ImageField(null=True, blank=True, upload_to="images")
+    
 
     def __str__(self):
         return self.text
@@ -78,3 +80,7 @@ class TakenQuiz(models.Model):
 class StudentAnswer(models.Model):
     student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='quiz_answers')
     answer = models.ForeignKey(Answer, on_delete=models.CASCADE, related_name='+')
+    
+    
+    
+ 

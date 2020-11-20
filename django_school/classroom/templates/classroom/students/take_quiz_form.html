@@ -41,6 +41,9 @@ input[type=radio]:checked + label:before{
   <p class="lead">{{ question.text }}</p>
   <form method="post" novalidate>
     {% csrf_token %}
+	{% if question.header_image %}
+		<img src ="{{ question.header_image.url }}"> <br/><br/>
+	{% endif %}
     {{ form|crispy }}
     <button type="submit" class="btn btn-primary">Next →</button>
   </form>
