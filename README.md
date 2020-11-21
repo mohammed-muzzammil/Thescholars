@@ -1,24 +1,6 @@
-# [Django School](https://djangoschools.herokuapp.com/)
-
 [![Python Version](https://img.shields.io/badge/python-3.6-brightgreen.svg)](https://python.org)
 [![Django Version](https://img.shields.io/badge/django-3.0-brightgreen.svg)](https://djangoproject.com)
-[![CircleCI](https://circleci.com/gh/suhailvs/django-schools.svg?style=svg)](https://circleci.com/gh/suhailvs/django-schools)
 
-## Host this site on dedicated server
-
-if you want to host this site on a dedicated server, contact me at suhailvs@gmail.com:
-
-* server costs - 5$/month
-* domain name(.com) registration - 10$/year
-* you can customize this site at a rate of 10$/hour
-
-## [demo](https://djangoschools.herokuapp.com/)
-
-This is an example project to illustrate an implementation of multiple user types. In this Django app, teachers can create quizzes and students can sign up and take quizzes related to their interests.
-
-![Django School Screenshot](https://simpleisbetterthancomplex.com/media/2018/01/teacher-quiz.png)
-
-Read the blog post [How to Implement Multiple User Types with Django](https://simpleisbetterthancomplex.com/tutorial/2018/01/18/how-to-implement-multiple-user-types-with-django.html).
 
 ## Running the Project Locally
 
@@ -33,7 +15,12 @@ Create Virtual Env and Install the requirements:
 ```bash
 cd django-schools
 python3 -m venv env
-source ./env/bin/activate
+(If on Windows)
+cd env
+cd Scripts
+activate
+(then go back to django schools)
+cd\
 pip install -r requirements.txt
 ```
 
