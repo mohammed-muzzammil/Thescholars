@@ -13,13 +13,12 @@ git clone https://github.com/mohammed-muzzammil/Thescholars
 Create Virtual Env and Install the requirements:
 
 ```bash
-cd django-schools
-python3 -m venv env
+cd Thescholars
 (If on Windows)
 cd env
 cd Scripts
 activate
-(then go back to django schools)
+(then go back to Thescholars Directory)
 cd\
 pip install -r requirements.txt
 ```
@@ -27,7 +26,7 @@ pip install -r requirements.txt
 Create the database and run the development server:
 
 ```bash
-cd django_school
+cd Thescholars
 python manage.py migrate
 python manage.py loaddata datas.json
 python manage.py runserver
