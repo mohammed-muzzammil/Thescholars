@@ -7,7 +7,7 @@
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/suhailvs/django-schools
+git clone https://github.com/mohammed-muzzammil/Thescholars
 ```
 
 Create Virtual Env and Install the requirements:
